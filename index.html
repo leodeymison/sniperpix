@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <article>
+        <section id="navtop">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="/images/logo.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/login.html" class="btn btn-success">Sair da conta</a>
+                </li>
+            </ul>
+        </section>
+        <section id="content">
+            <h1>Seja bem-vindo!</h1>
+            <p id="name">Andy William <span id="online"></span></p>
+            <span>AndyWilliam@gmail.com</span>
+            <div class="boxed">
+                <div class="boxed-title d-flex justify-space-between align-items-center py-4">
+                    <h2>Comece por aqui</h2>
+                    <a href="">Assista agora</a>
+                </div>
+                <div>
+                    <div class="iframe-container">
+                        <div class="iframe-placeholder" id="iframe-placeholder">
+                            <svg width="32" height="37" viewBox="0 0 32 37" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.5 17.634C32.1667 18.0189 32.1667 18.9811 31.5 19.366L2.25 36.2535C1.58333 36.6384 0.749998 36.1573 0.749998 35.3875L0.75 1.6125C0.75 0.842701 1.58333 0.361577 2.25 0.746477L31.5 17.634Z"
+                                    fill="#4a4a4a9a" />
+                            </svg>
+
+                        </div>
+                        <iframe src="" frameborder="0"></iframe>
+                    </div>
+                    <div class="banner mt-3">
+                        <img src="/images/banner-home.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="boxed">
+                <div class="boxed-title d-flex justify-space-between align-items-center py-4">
+                    <h2>Mais informações para primeiros passos</h2>
+                </div>
+                <div>
+                    <button class="btn btn-success" onclick="popUpIframe(true)">Faça seu cadastro na
+                        plataforma</button>
+                    <button class="btn btn-success">Siga o fundador sniperpix</button>
+                </div>
+            </div>
+            <div id="social">
+                <h3>Instale nosso aplicativo</h3>
+                <div>
+                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18.5" cy="18.5" r="18.5" fill="white" />
+                        <path
+                            d="M24.1988 18.1678C24.2091 17.3628 24.4219 16.5736 24.8172 15.8735C25.2126 15.1735 25.7777 14.5852 26.4601 14.1637C26.0266 13.5415 25.4548 13.0295 24.79 12.6683C24.1252 12.3071 23.3857 12.1066 22.6303 12.0829C21.019 11.9129 19.4569 13.0519 18.6358 13.0519C17.7988 13.0519 16.5346 12.0997 15.1733 12.1279C14.2927 12.1565 13.4345 12.4138 12.6824 12.8748C11.9302 13.3359 11.3097 13.9848 10.8812 14.7586C9.02547 17.9877 10.4097 22.7333 12.1874 25.3435C13.0768 26.6216 14.1163 28.0493 15.4764 27.9987C16.8074 27.9432 17.3044 27.1457 18.911 27.1457C20.5027 27.1457 20.9691 27.9987 22.3568 27.9665C23.785 27.9432 24.6848 26.6827 25.543 25.3925C26.182 24.4818 26.6738 23.4752 27 22.4102C26.1703 22.0575 25.4622 21.4671 24.9641 20.7127C24.4659 19.9583 24.1998 19.0732 24.1988 18.1678Z"
+                            fill="black" />
+                        <path
+                            d="M21.5777 10.3662C22.3564 9.42674 22.74 8.21918 22.6471 7C21.4574 7.12558 20.3585 7.69702 19.5692 8.60047C19.1834 9.04183 18.8878 9.55529 18.6995 10.1115C18.5112 10.6677 18.4338 11.2558 18.4718 11.8421C19.0669 11.8482 19.6555 11.7186 20.1935 11.463C20.7315 11.2073 21.2048 10.8323 21.5777 10.3662Z"
+                            fill="black" />
+                    </svg>
+
+                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18.5" cy="18.5" r="18.5" fill="white" />
+                        <path
+                            d="M18.0587 18.9768L10.0735 27.2345C10.0742 27.2359 10.0742 27.2374 10.075 27.2388C10.3195 28.1362 11.1602 28.7961 12.1577 28.7961C12.5567 28.7961 12.931 28.6909 13.252 28.5067L13.2775 28.4921L22.2655 23.4388L18.0587 18.9768Z"
+                            fill="#EB4335" />
+                        <path
+                            d="M26.1369 17.5708L26.1294 17.5657L22.2489 15.3734L17.8772 19.1639L22.2639 23.4374L26.1242 21.2678C26.8007 20.9119 27.2597 20.2169 27.2597 19.4153C27.2597 18.6194 26.8067 17.9274 26.1369 17.5708Z"
+                            fill="#FABC13" />
+                        <path
+                            d="M10.0735 11.5617C10.0255 11.7341 10 11.9146 10 12.1024V26.6937C10 26.8815 10.0247 27.0628 10.0735 27.2345L18.3333 19.188L10.0735 11.5617Z"
+                            fill="#547DBF" />
+                        <path
+                            d="M18.1172 19.3977L22.2505 15.3719L13.2722 10.3003C12.946 10.1096 12.5657 10 12.1577 10C11.1602 10 10.3187 10.6613 10.0735 11.5595V11.5617L18.1172 19.3977Z"
+                            fill="#30A851" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section id="navbottom">
+            <ul>
+                <li class="active">
+                    <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.3724 20.7733V17.7156C11.3724 16.9351 12.0999 16.3023 12.9973 16.3023L16.2777 16.3023C16.7086 16.3023 17.1219 16.4512 17.4266 16.7163C17.7314 16.9813 17.9026 17.3408 17.9026 17.7156V20.7733C17.8998 21.0978 18.0461 21.4099 18.309 21.6402C18.5718 21.8705 18.9295 22 19.3026 22H21.5406C22.5859 22.0023 23.5892 21.6428 24.3293 21.0008C25.0694 20.3588 25.4853 19.487 25.4853 18.5778V9.86686C25.4852 9.13246 25.111 8.43584 24.4633 7.96467L16.85 2.67587C15.5256 1.74856 13.6281 1.7785 12.3433 2.74698L4.90362 7.96467C4.22536 8.42195 3.81997 9.12064 3.79993 9.86686V18.5689C3.79993 20.4639 5.56601 22 7.74458 22L9.93151 22C10.7064 22 11.3362 21.4562 11.3418 20.7822L11.3724 20.7733Z"
+                            fill="#dfdfdf" />
+                    </svg>
+                    <p>Home</p>
+                </li>
+                <li>
+                    <svg width="41" height="26" viewBox="0 0 41 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="8.56753" y1="8.25" x2="8.56753" y2="25.75" stroke="white" />
+                        <line x1="16.5" y1="5" x2="16.5" y2="26" stroke="white" />
+                        <line x1="24.0104" y1="4.25" x2="24.0104" y2="26" stroke="white" />
+                        <line x1="31.7318" y1="-5.46392e-09" x2="31.7318" y2="26" stroke="white" />
+                        <rect x="5.49372" y="10.75" width="6.17714" height="14" fill="white" />
+                        <rect x="13.2151" y="6.25" width="6.17714" height="15.75" fill="white" />
+                        <rect x="21.0125" y="8.5" width="6.17714" height="17.25" fill="white" />
+                        <rect x="28.658" y="4.25" width="6.17714" height="19" fill="white" />
+                        <path
+                            d="M15.5316 13.125L15.9214 12.2133L15.4415 12.0068L14.9997 12.2736L15.5316 13.125ZM25.6981 17.5L25.3083 18.4117L25.7792 18.6143L26.2168 18.3593L25.6981 17.5ZM40.8294 9.50288C40.963 8.97141 40.6346 8.42735 40.0959 8.28771L31.3171 6.01204C30.7784 5.87239 30.2333 6.19004 30.0997 6.72152C29.9661 7.25299 30.2945 7.79705 30.8332 7.93669L38.6366 9.95951L36.7011 17.6581C36.5675 18.1896 36.8959 18.7337 37.4346 18.8733C37.9733 19.0129 38.5183 18.6953 38.652 18.1638L40.8294 9.50288ZM1.77879 22.6015L16.0634 13.9764L14.9997 12.2736L0.715061 20.8986L1.77879 22.6015ZM15.1417 14.0367L25.3083 18.4117L26.088 16.5883L15.9214 12.2133L15.1417 14.0367ZM26.2168 18.3593L40.3727 10.1093L39.3353 8.39077L25.1795 16.6407L26.2168 18.3593Z"
+                            fill="#dfdfdf" />
+                    </svg>
+                    <p>Investir</p>
+                </li>
+                <li>
+                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.20902 0.5H11.8197C14.584 0.5 16.514 2.16904 16.514 4.56091V11.4391C16.514 13.831 14.584 15.5 11.8197 15.5H5.20902C2.44468 15.5 0.514671 13.831 0.514671 11.4391V4.56091C0.514671 2.16904 2.44468 0.5 5.20902 0.5ZM21.0107 2.87898C21.5118 2.65563 22.0996 2.67898 22.5778 2.94294C23.056 3.20589 23.3413 3.66274 23.3413 4.16223V11.8384C23.3413 12.3389 23.056 12.7947 22.5778 13.0577C22.3164 13.2008 22.0242 13.2739 21.7298 13.2739C21.4844 13.2739 21.239 13.2231 21.0096 13.1206L19.3192 12.3734C18.6938 12.0952 18.3057 11.5369 18.3057 10.9165V5.08305C18.3057 4.46173 18.6938 3.90335 19.3192 3.62721L21.0107 2.87898Z"
+                            fill="#dfdfdf" />
+                    </svg>
+
+                    <p>Academy</p>
+                </li>
+                <li>
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11ZM11.3942 8.12069C10.3243 8.5657 8.18595 9.48677 4.97922 10.8839C4.4585 11.091 4.18573 11.2935 4.16089 11.4916C4.11893 11.8264 4.53814 11.9582 5.10901 12.1377C5.18666 12.1621 5.26712 12.1874 5.3496 12.2142C5.91124 12.3968 6.66675 12.6104 7.0595 12.6189C7.41577 12.6266 7.81341 12.4797 8.25241 12.1782C11.2486 10.1558 12.7952 9.1335 12.8923 9.11146C12.9608 9.09591 13.0557 9.07636 13.12 9.13353C13.1843 9.1907 13.178 9.29896 13.1712 9.32801C13.1297 9.50505 11.4841 11.0349 10.6325 11.8266C10.367 12.0735 10.1787 12.2485 10.1402 12.2885C10.054 12.3781 9.9661 12.4628 9.88164 12.5442C9.35986 13.0472 8.96857 13.4244 9.9033 14.0404C10.3525 14.3364 10.7119 14.5812 11.0705 14.8254C11.4621 15.0921 11.8527 15.3581 12.3581 15.6894C12.4869 15.7738 12.6099 15.8614 12.7296 15.9468C13.1854 16.2717 13.5948 16.5636 14.1007 16.5171C14.3946 16.49 14.6982 16.2137 14.8524 15.3893C15.2169 13.4412 15.9331 9.22025 16.0987 7.48089C16.1132 7.3285 16.0949 7.13347 16.0803 7.04786C16.0656 6.96225 16.035 6.84027 15.9237 6.74997C15.7919 6.64303 15.5885 6.62047 15.4975 6.622C15.0838 6.62937 14.449 6.85008 11.3942 8.12069Z"
+                            fill="#dfdfdf" />
+                    </svg>
+
+                    <p>Telegram</p>
+                </li>
+            </ul>
+        </section>
+    </article>
+
+
+    <div class="notification" style="display: none;">
+        <div class="notification-message">
+            <h3>SNIPERPIX</h3>
+            <p>Olá! Seja bem-vindo(a) e aproveite todos os benefícios</p>
+        </div>
+    </div>
+
+    <div class="popup-iframe" id="popup-iframe" style="display: none;">
+        <iframe src="https://pixbet.com/sports/" class="popup-iframe-message"></iframe>
+        <div class="close" onclick="popUpIframe(false)">
+            <img src="./images/close.png" alt="">
+        </div>
+    </div>
+</body>
+
+<script src="./scripts/router.js"></script>
+<script>
+    const redirectTelegram = () => {
+        window.location.href = "https://google.com";
+    }
+
+    const redirectPage = (page) => {
+        Router(pages, "content", page);
+    }
+
+    const activeNotification = () => {
+
+    }
+    const popUpIframe = (option) => {
+        if (option) {
+            document.getElementById("popup-iframe").style.display = "flex";
+        } else {
+            document.getElementById("popup-iframe").style.display = "none";
+        }
+    }
+</script>
+
+</html>
