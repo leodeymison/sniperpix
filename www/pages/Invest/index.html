@@ -1,0 +1,51 @@
+<div data-name="invest" class="page">
+    <div class="invest d-flex justify-content-between">
+        <h3>Siga as instruções</h3>
+        <button class="btn btn-success">Gerar Investimentos</button>
+    </div>
+    <div class="invest ">
+        <h1>Comece</h1>
+    </div>
+    <div class="my-4">
+        <canvas id="myChart"></canvas>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    const redirectTelegram = () => {
+        window.location.href = "https://google.com";
+    }
+
+    const redirectPage = (page) => {
+        Router(pages, "content", page);
+    }
+</script>
+
+<script>
+    export default (props) => {
+        return $render;
+    }
+</script>
+
+</html>
