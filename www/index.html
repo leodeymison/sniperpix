@@ -91,7 +91,7 @@
         </section>
     </article>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./js/axios.js"></script>
 <script src="./framework7/framework7-bundle.min.js"></script>
 <script src="./js/cordova-app.js"></script>
@@ -124,7 +124,60 @@
         } else if (page.name == "academy") {
 
         } else if (page.name == "invest") {
+            const ctx = document.getElementById('myChart');
+            console.log("exec")
 
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            let running = false;
+
+            document.getElementById("invest_generator").addEventListener("click", () => {
+                if (!running) {
+                    const status = document.getElementById("invest-status");
+                    const btn = document.getElementById("invest_generator");
+                    btn.classList.remove("btn-success");
+                    btn.classList.add("btn-secondary");
+                    running = true;
+                    status.classList.remove("down");
+                    status.innerHTML = "Analisando...";
+                    const sinal = GeneratorNumber(0, 1);
+                    const numberGenerator = GeneratorNumber(1, 99);
+                    setTimeout(() => {
+                        if (sinal) {
+                            status.innerHTML = `Abaixo em ${numberGenerator}%`;
+                            status.classList.add("down");
+                            running = false;
+                            btn.classList.add("btn-success");
+                        } else {
+                            status.innerHTML = `Acima em ${numberGenerator}%`;
+                            status.classList.remove("down");
+                            running = false;
+                            btn.classList.add("btn-success");
+                        }
+                    }, 5000);
+                }
+            })
+
+            function GeneratorNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            }
         }
     });
 
